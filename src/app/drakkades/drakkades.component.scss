@@ -1,0 +1,59 @@
+.bandeau {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 10em;
+    margin-right: 1em;
+}
+
+.icon{
+    height: 5em;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4em;
+    font-weight: bold;
+    
+}
+
+.list {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.home-card {
+    width: 95%;
+    height: 90%;
+    text-align: center;
+    background-color: lightgray;
+    border-color: black;
+    box-shadow: black;
+    opacity: 0.8;
+}
+
+.center-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.8);
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-content{
+    margin-top: 1.8em;
+}
+
+mat-card-header{
+    display: flex;
+    justify-content: center;
+}

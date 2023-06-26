@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import React from 'react';
 
 @Component({
   selector: 'app-root',
