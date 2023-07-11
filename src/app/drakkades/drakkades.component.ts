@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-drakkades',
@@ -7,13 +6,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./drakkades.component.scss']
 })
 export class DrakkadesComponent {
-  @Output() sidenavClose = new EventEmitter();
 
-  constructor(private router: Router){}
-
-  public onSidenavClose = () => {
-    this.sidenavClose.emit();
-  }
+  constructor() {}
 
   redirectToYoutube() {
     window.open('https://www.youtube.com/@drakkades', '_blank');
@@ -38,14 +32,6 @@ export class DrakkadesComponent {
   redirectToInstagram() {
     window.open('https://www.instagram.com/drakkades', '_blank');
   }
-
-  // playSound() {
-  //    if (this.audioPlayer) {
-  //      const audio: HTMLAudioElement = this.audioPlayer.nativeElement;
-  //      audio.play();
-  //    }
-  // }
-
 
   playSound() {
     let audio = new Audio();

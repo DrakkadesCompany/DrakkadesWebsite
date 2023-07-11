@@ -1,15 +1,11 @@
 .bandeau {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
 
 .logo {
     height: 20em;
     margin-right: 1em;
-    box-shadow: black;
-    border-color: black;
 }
 
 .icon{
@@ -34,7 +30,6 @@
     margin-right: 5vw;
 }
 
-
 .wallpaper{
     background-color: blue;
 }
@@ -44,59 +39,27 @@
     height: 90%;
     display: flex;
     justify-content: center;
-    background-color: lightgray;
-    border-color: black;
     box-shadow: 10px 10px 5px black;
     opacity: 0.8;
     cursor: pointer;
+    border-width: 3px;
+    border-color : black;
 }
 
-.home-card-youtube {
-    width: 95%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
+.card-youtube {
     background-color: red;
-    border-color: black;
-    box-shadow: 10px 10px 5px black;
-    opacity: 0.8;
-    cursor: pointer;
 }
 
-.home-card-twitch {
-    width: 95%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
+.card-twitch {
     background-color: purple;
-    border-color: black;
-    box-shadow: 10px 10px 5px black;
-    opacity: 0.8;
-    cursor: pointer;
 }
 
-.home-card-discord {
-    width: 95%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
+.card-discord {
     background-color: lightblue;
-    border-color: black;
-    box-shadow: 10px 10px 5px black;
-    opacity: 0.8;
-    cursor: pointer;
 }
 
-.home-card-twitter {
-    width: 95%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
+.card-twitter {
     background-color: blue;
-    border-color: black;
-    box-shadow: 10px 10px 5px black;
-    opacity: 0.8;
-    cursor: pointer;
 }
 
 .center-icon {
