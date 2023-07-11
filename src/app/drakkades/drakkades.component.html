@@ -1,4 +1,5 @@
 <div class="wallpaper">
+  <img src="assets/img/BSOD_Windows_8.svg">
   <mat-card-header>
     <div class="bandeau">
         <img class="logo" src="assets/img/Logo.png" alt="Logo of WatcherSecops">
@@ -7,57 +8,57 @@
   </mat-card-header>
 
   <mat-grid-list class="list" cols="2" rowHeight="4:1">
-      <mat-grid-tile>
-          <mat-card (click)="redirectToYoutube()" matRipple class="home-card-youtube">
-            <mat-card-content class="center-icon">
-              <img class="icon" src="assets/img/youtube.png" alt="Icone youtube">
-              <h2 class="tag">Youtube</h2>
-            </mat-card-content>
-          </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-          <mat-card (click)="redirectToYoutubeVOD()" matRipple class="home-card-youtube">
-            <mat-card-content class="center-icon">
-              <img class="icon" src="assets/img/youtube.png" alt="Icone youtube">
-                <h2 class="tag">Youtube VOD</h2>
-              </mat-card-content>
-            </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-          <mat-card (click)="redirectToTwitch()" matRipple class="home-card-twitch">
-            <mat-card-content class="center-icon">
-              <img class="icon" src="assets/img/twitch.png" alt="Icone twitch">
-                <h2 class="tag">Twitch</h2>
-              </mat-card-content>
-            </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-          <mat-card (click)="redirectToDiscord()" matRipple class="home-card-discord">
-            <mat-card-content class="center-icon">
-              <img class="icon" src="assets/img/discord.png" alt="Icone discord">
-                <h2 class="tag">Discord</h2>
-              </mat-card-content>
-            </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-          <mat-card (click)="redirectToTwitter()" matRipple class="home-card-twitter">
-            <mat-card-content class="center-icon">
-              <img class="icon" src="assets/img/twitter.png" alt="Icone twitter">
-                <h2 class="tag">Twitter</h2>
-              </mat-card-content>
-            </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-          <mat-card (click)="redirectToInstagram()" matRipple class="home-card">
-            <mat-card-content class="center-icon">
-              <img class="icon" src="assets/img/instagram.png" alt="Icone instagram">
-                <h2 class="tag">Instagram</h2>
-              </mat-card-content>
-            </mat-card>
-      </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card (click)="redirectToYoutube()" matRipple class="home-card card-youtube">
+        <mat-card-content class="center-icon">
+          <img class="icon" src="assets/img/youtube.svg" alt="Icone youtube">
+          <h2 class="tag">Youtube</h2>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card (click)="redirectToYoutubeVOD()" matRipple class="home-card card-youtube">
+        <mat-card-content class="center-icon">
+          <img class="icon" src="assets/img/youtube.png" alt="Icone youtube VOD">
+          <h2 class="tag">Youtube VOD</h2>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card (click)="redirectToTwitch()" matRipple class="home-card card-twitch">
+        <mat-card-content class="center-icon">
+          <img class="icon" src="assets/img/twitch.png" alt="Icone twitch">
+          <h2 class="tag">Twitch</h2>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card (click)="redirectToDiscord()" matRipple class="home-card card-discord">
+        <mat-card-content class="center-icon">
+          <img class="icon" src="assets/img/discord.png" alt="Icone discord">
+          <h2 class="tag">Discord</h2>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card (click)="redirectToTwitter()" matRipple class="home-card card-twitter">
+        <mat-card-content class="center-icon">
+          <img class="icon" src="assets/img/twitter.png" alt="Icone twitter">
+          <h2 class="tag">Twitter</h2>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card (click)="redirectToInstagram()" matRipple class="home-card">
+        <mat-card-content class="center-icon">
+          <img class="icon" src="assets/img/instagram.png" alt="Icone instagram">
+          <h2 class="tag">Instagram</h2>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
   </mat-grid-list>
 
-  <footer>
+  <mat-card-footer>
     <button (click)="playSound()">Appuyez ici</button>
-  </footer>
+  </mat-card-footer>
 </div>
