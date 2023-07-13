@@ -16,6 +16,11 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+.icon-youtube {
+    height: 5em;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 .title {
     display: flex;
     justify-content: center;
@@ -30,36 +35,75 @@
     margin-right: 5vw;
 }
 
-.wallpaper{
-    background-color: blue;
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 135%;
+    background-size: cover;
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125%;
+    margin-top: -15%;
+    background-image: url('../../assets/img/error_message.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+.content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
 }
 
 .home-card {
+    border-radius: 50px;
     width: 95%;
     height: 90%;
     display: flex;
     justify-content: center;
     box-shadow: 10px 10px 5px black;
-    opacity: 0.8;
+    opacity: 1;
     cursor: pointer;
     border-width: 3px;
     border-color : black;
 }
 
 .card-youtube {
-    background-color: red;
+    background: linear-gradient(to right, red, rgb(40, 40, 40));
 }
 
 .card-twitch {
-    background-color: purple;
+    background: linear-gradient(to right, rgb(100, 65, 164), rgb(40, 40, 40));
 }
 
 .card-discord {
-    background-color: lightblue;
+    background: linear-gradient(to right, rgb(88, 101, 242), white);
 }
 
 .card-twitter {
-    background-color: blue;
+    background: linear-gradient(to right, rgb(29, 161, 242), white);
+}
+
+.card-tiktok {
+    background: linear-gradient(to right, rgb(255, 0, 80), rgb(0, 242, 234), black);
+}
+
+.card-instagram {
+    background: linear-gradient(to right, rgb(251, 173, 80), rgb(138, 58, 185));
+}
+
+.card-pornhub {
+    background: linear-gradient(to right, rgb(255, 163, 26), rgb(27, 27, 27));
 }
 
 .center-icon {
@@ -70,10 +114,16 @@
 }
 
 .tag {
+    color: white;
     display: flex;
     justify-content: center;
     font-weight: bold;
     font-size: 3em;
+    -webkit-text-stroke: 2px black;
+}
+
+.toggle-switch {
+    background-color: black;  
 }
 
 mat-card-header{
