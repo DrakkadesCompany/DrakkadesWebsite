@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-drakkades',
@@ -8,6 +8,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class DrakkadesComponent {
 
   constructor() {}
+
+  showContent = false;
+  isToggled = false;
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.showContent = true;
+    }, 2000);
+  }
 
   redirectToYoutube() {
     window.open('https://www.youtube.com/@drakkades', '_blank');
@@ -31,6 +40,10 @@ export class DrakkadesComponent {
 
   redirectToInstagram() {
     window.open('https://www.instagram.com/drakkades', '_blank');
+  }
+
+  redirectToTiktok() {
+    window.open('https://www.tiktok.com/@drakkades', '_blank');
   }
 
   playSound() {
