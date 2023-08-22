@@ -1,5 +1,5 @@
 <div class="background-container">
-  <div class="content" [class.visible]="showContent">
+  <div class="content-total" [class.visible]="showContent">
     <mat-card-header>
       <div class="bandeau">
           <img class="logo" src="assets/img/Logo.png" alt="Logo of WatcherSecops">
@@ -17,7 +17,7 @@
       </mat-grid-tile>
       <mat-grid-tile>
         <mat-card (click)="redirectToYoutubeVOD()" matRipple class="home-card card-youtube">
-          <mat-card-content class="center-icon">
+          <mat-card-content class="card-content-container center-icon">
             <img class="icon" src="assets/img/youtube.png" alt="Icone youtube VOD">
             <h2 class="tag">YouTube VOD</h2>
           </mat-card-content>
@@ -58,7 +58,7 @@
       <mat-grid-tile>
         <mat-card (click)="redirectToTiktok()" matRipple class="home-card card-tiktok">
           <mat-card-content class="center-icon">
-            <img class="icon" src="assets/img/tiktok.svg" alt="Icone instagram">
+            <img class="icon" src="assets/img/tiktok.svg" alt="Icone tiktok">
             <h2 class="tag">TikTok</h2>
           </mat-card-content>
         </mat-card>
@@ -66,11 +66,14 @@
       <mat-grid-tile>
         <mat-card (click)="playSound()" matRipple class="home-card card-pornhub">
           <mat-card-content class="center-icon">
-            <img class="icon" src="assets/img/pornhub.svg" alt="Icone instagram">
+            <img class="icon" src="assets/img/pornhub.svg" alt="Icone pornhub">
             <h2 class="tag">PornHub</h2>
           </mat-card-content>
         </mat-card>
       </mat-grid-tile>
     </mat-grid-list>
+    <mat-card-footer>
+      <img class="qrcode" src="assets/img/QRcode.png">
+    </mat-card-footer>
   </div>
 </div>
